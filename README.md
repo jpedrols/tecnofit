@@ -29,7 +29,7 @@ No terminal, execute os comandos:
 
 A Aplicação estará disponível no endereço `http://localhost:8080`. 
 
-Serão solicitados usuário e senha, pois fiz um painel simples para possivelmente agregar no projeto. Utilizei o Livewire para aplicar meus conhecimentos de reatividade. Assim como react, o Livewire também aplica reatividade nas páginas fazendo ações sem load no DOM. Será possível visualizar isso no login.
+Serão solicitados usuário e senha, pois fiz um painel simples para possivelmente agregar no projeto. Utilizei o Livewire para aplicar meus conhecimentos de reatividade. Assim como react e o VUE, o Livewire também aplica reatividade nas páginas fazendo ações sem load no DOM. Será possível visualizar isso no login.
 
 - usuario: admin
 - senha: admin
