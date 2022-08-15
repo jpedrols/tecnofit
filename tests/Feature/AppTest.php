@@ -37,9 +37,8 @@ class AppTest extends TestCase
         $result = (array) $response->json();
         $response->assertStatus(200);
 
-        assertEquals('Jose', $result[0]['name']);
+        assertEquals('Jose', $result[0]['user_name']);
         assertEquals(190, $result[0]['value']);
-        assertEquals('2021-01-04 00:00:00', $result[0]['date']);
     }
 
     public function test_rota_retorna_not_found_ao_enviar_id_nao_existente(): void

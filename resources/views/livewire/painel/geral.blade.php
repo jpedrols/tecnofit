@@ -79,7 +79,7 @@
                                 @php
                                     $i = 0;
                                     $ultimo_registro = "";
-                                    $response = Http::get('tecnofitt.test/api/rank_por_movimento/'.$movimento->id);
+                                    $response = Http::get('http://localhost/api/rank_por_movimento/'.$movimento->id);
                                     $collection = json_decode($response);
                                     $rank_por_movimento = collect($collection)->all();
                                 @endphp
@@ -116,7 +116,7 @@
 
                             <pre>
                                 <code>
-                                    Endpoint: tecnofit.test/api/rank_por_movimento/{id}'
+                                    Endpoint: http://localhost/api/rank_por_movimento/{id}
                                 </code>
                             </pre>
 
