@@ -93,7 +93,7 @@
                                                 <span class="rounded-circle bg-success bg-soft font-size-16 text-white" style="padding: 15px 20px">{{ $i }}º</span>
                                             </div>
                                             <div class="card-body">
-                                                <h5 class="card-title">{{ $rankeado->name }}</h5>
+                                                <h5 class="card-title">{{ $rankeado->user_name }}</h5>
                                                 <p class="card-text">
                                                     Peso {{ $rankeado->value }} <br>
                                                     {{ $rankeado->date }}
