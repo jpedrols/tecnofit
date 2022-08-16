@@ -9,6 +9,7 @@
 - PHPUnit
 - Docker / Docker Compose
 - Livewire
+- Bootstrap
 ---
 
 ## Como executar a aplicação
@@ -29,7 +30,7 @@ No terminal, execute os comandos:
 
 A Aplicação estará disponível no endereço `http://localhost:8080`. 
 
-Serão solicitados usuário e senha, pois fiz um painel simples para possivelmente agregar no projeto. Utilizei o Livewire para aplicar meus conhecimentos de reatividade. Assim como react e o VUE, o Livewire também aplica reatividade nas páginas fazendo ações sem load no DOM. Será possível visualizar isso no login.
+Serão solicitados, usuário e senha, pois fiz um painel simples para possivelmente agregar no projeto. Utilizei o Livewire para aplicar meus conhecimentos de reatividade. Assim como react e o VUE, o Livewire também aplica reatividade nas páginas fazendo ações sem load no DOM. Será possível visualizar isso no login.
 
 - usuario: admin
 - senha: admin
@@ -66,5 +67,8 @@ Eu optei por utilizar o framework Laravel, pois em meus projetos sempre utilizo.
 
 A criação da API foi simples utilizando os próprios recursos do Framework.
 
-## Resolução do problema:
+## Resolução:
 Utilizei as ligações necessárias entre as tabelas para apresentar o resultado, calculando o rank na prórpia view. Estou ciente de que no MYSQL 8 foi implementado a função RANK, porém optei por fazer nesse formato para talvez conseguir mostrar um pouco mais da minha lógica. Mas caso necessário consigo adaptar o código para o mesmo.
+
+## Finalização:
+Espero que eu consiga passar um pouquinho do que ja trabalhei pra vocês, e que eu consiga demonstrar o tamanho da força de vontade que está dentro de mim para aprender novas tecnologias, e viver tudo isso da melhor forma possível! Meu principal objetivo está sendo a busca pelo conhecimento e por isso cheguei até vocês. Qualquer dúvida ou questão, estou a disposição.
