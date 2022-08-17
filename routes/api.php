@@ -14,5 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('rank_por_movimento/{id}', 'App\Http\Controllers\ApiController@getUsersRankByMovement');
-// Route::get('movimento/{id}', 'App\Http\Controllers\ApiController@getMovementById');
+Route::middleware(['admin'])->group(function () {
+    Route::get('rank_por_movimento/{id}', 'App\Http\Controllers\ApiController@getUsersRankByMovement');
+});
