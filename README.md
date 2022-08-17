@@ -41,7 +41,7 @@ Todas as respostas utilizam o formato json: `Content-Type: application/json`
 
 
 ### ROTAS:
-### Rank de Usuários por Movimento: `[GET] http://localhost/api/rank_por_movimento/{id}`
+### Rank de Usuários por Movimento: `[GET] http://localhost:8080/api/rank_por_movimento/{id}`
 
 
 **Descrição:** Obtém o rank de usuários em um determinado movimento. 
