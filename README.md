@@ -20,6 +20,8 @@ Precisamos de início ter o
 instalado no computador.
 
 No terminal, execute os comandos:
+- Primeiramente vá até o arquivo .env já disponibilizado no diretório, e adicione seu *IPV4* na variável *IP_MAQUINA*. Eu tentei fazer a requisição por 'localhost' porém estava me retornando negação. Essa foi a forma mais rápida que consegui encontrar para funcionar local. Não costumo enfrentar esse erro...
+- As outras variáveis já estão configuradas e não precisam ser modificadas.
 - `docker-compose up -d` para subir a api e o banco de dados.
 - `docker-compose exec api composer install` para instalar as dependências da aplicação.
 - `docker exec tecnofit_api_1 php artisan migrate` para abastecer o banco.

@@ -5,7 +5,7 @@
         </div>
     </div>
 
-    @if(session()->get("logado") == 'nao' || !session()->get("logado")) 
+    @if(session()->get("logado") != 'sim') 
         <div class="col-sm-6 text-black">
 
             <div class="px-5 ms-xl-4">
@@ -79,7 +79,7 @@
                                 @php
                                     $i = 0;
                                     $ultimo_registro = "";
-                                    $response = Http::get('http://localhost/api/rank_por_movimento/'.$movimento->id);
+                                    $response = Http::get('http://'.env('IP_MAQUINA').':8080/api/rank_por_movimento/'.$movimento->id);
                                     $collection = json_decode($response);
                                     $rank_por_movimento = collect($collection)->all();
                                 @endphp
@@ -116,7 +116,7 @@
 
                             <pre>
                                 <code>
-                                    Endpoint: http://localhost/api/rank_por_movimento/{id}
+                                    Endpoint: http://localhost/api/rank_por_movimento/{{ $movimento->id }}
                                 </code>
                             </pre>
 

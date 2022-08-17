@@ -17,7 +17,7 @@ class Geral extends Component
         if ($this->usuario == 'admin' && $this->senha == 'admin') {
             session()->put(["logado" => 'sim']);
             $this->dispatchBrowserEvent( 'toastr:success', [
-                'message' =>  'logou',
+                'message' =>  'Bem-Vindo',
             ]);
         } else {
             $this->dispatchBrowserEvent( 'toastr:error', [
