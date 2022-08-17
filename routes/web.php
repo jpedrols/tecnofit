@@ -13,7 +13,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    if(session()->get("logado") == 'nao' || !session()->get("logado"))  { toastr()->info('Faça login com os dados mostrados no input'); }
-    return view('geral');
-});
+Route::get('/', 'App\Http\Controllers\GeralController@inicio')->name('inicio');
