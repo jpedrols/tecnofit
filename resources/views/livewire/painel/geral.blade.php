@@ -79,7 +79,7 @@
                                 @php
                                     $i = 0;
                                     $ultimo_registro = "";
-                                    $response = Http::get('tecnofitt.test/api/rank_por_movimento/'.$movimento->id);
+                                    $response = Http::get('http://localhost/api/rank_por_movimento/'.$movimento->id);
                                     $collection = json_decode($response);
                                     $rank_por_movimento = collect($collection)->all();
                                 @endphp
@@ -93,7 +93,7 @@
                                                 <span class="rounded-circle bg-success bg-soft font-size-16 text-white" style="padding: 15px 20px">{{ $i }}º</span>
                                             </div>
                                             <div class="card-body">
-                                                <h5 class="card-title">{{ $rankeado->name }}</h5>
+                                                <h5 class="card-title">{{ $rankeado->user_name }}</h5>
                                                 <p class="card-text">
                                                     Peso {{ $rankeado->value }} <br>
                                                     {{ $rankeado->date }}
@@ -116,7 +116,7 @@
 
                             <pre>
                                 <code>
-                                    Endpoint: tecnofit.test/api/rank_por_movimento/{id}'
+                                    Endpoint: http://localhost/api/rank_por_movimento/{id}
                                 </code>
                             </pre>
 
