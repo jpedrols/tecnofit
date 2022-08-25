@@ -24,6 +24,16 @@ class Geral extends Component
                 'message' =>  'Informações incorretas',
             ]);
         }
+
+        $this->usuario = "";
+        $this->senha = "";
+    }
+
+    public function deslogar() {
+        session()->forget("logado");
+        $this->dispatchBrowserEvent( 'toastr:success', [
+            'message' =>  'Até breve!',
+        ]);
     }
  
     public function render()
