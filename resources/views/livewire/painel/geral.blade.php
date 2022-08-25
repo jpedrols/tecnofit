@@ -1,8 +1,8 @@
 <div class="row">
 
     <div wire:loading style="z-index: 1000; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background-color: white; text-align: center">
-        {{-- <div class="spinner-border text-primary" role="status" style="margin-top: 20%;">
-        </div> --}}
+        <div class="spinner-border text-primary" role="status" style="position: absolute; top: 20px; right: 50px;">
+        </div>
         <div style="margin-top: 20%;">
             <img src="{{ asset('gif.gif') }}">
         </div>
